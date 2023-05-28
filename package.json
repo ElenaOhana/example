@@ -9,7 +9,9 @@
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
     "start": "fastify start -l info app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "dev": "fastify start -w -l info -P app.js",
+    "postinstall": "npm ci --prefix lets_coupon_it",
+    "build": "npm run build --prefix lets_coupon_it"
   },
   "keywords": [],
   "author": "",
