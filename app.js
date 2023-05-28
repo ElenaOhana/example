@@ -8,7 +8,7 @@ module.exports = async function (fastify, opts) {
   // Place here your custom code!
 
   fastify.register(fastifyStatic, {
-    root: `${process.cwd()}/lets_coupon_it/build`,
+    root: `${process.cwd()}/lets_coupon_it\build`,
   });
 
   fastify.setNotFoundHandler((req, res) => {
